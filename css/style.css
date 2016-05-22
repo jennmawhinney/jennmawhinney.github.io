@@ -83,7 +83,6 @@ a{
   padding-top: 0;
 }
 .social{
-  /*margin-left: 2em;*/
   display: inline-block;
 }
 #social_linkedin, #social_github, #social_twitter{
@@ -304,7 +303,14 @@ a{
   height: 20%;
   display: inline-block;
 }
-#phone:hover, #email:hover, #linkedin:hover, #git:hover, #twitter:hover{
+h3#email, h3#linkedin, h3#git, h3#twitter{
+  font-size: 0.2em;
+}
+#phone:hover{
+  background-color: #DAA161;
+  color: black;
+}
+a.details:hover{
   background-color: #DAA161;
   color: black;
 }
@@ -327,53 +333,7 @@ a{
   width: 15em;
   height: 2em;
   margin: 47% auto;
-  /*border: 1px solid white;*/
 }
-/*.wrap{
-  position:relative;
-  top:50px;
-  left:50px;
-}
-
-.circle{
-  position: absolute;
-  top:0;
-  left:0;
-  border-radius: 100%;
-  overflow: hidden;
-}
-
-.outside{
-  width: 15em;
-  height: 15em;
-  margin-top: -8em;
-  margin-left: 8em;
-  border: 3px solid #DAA161;
-  top: -3px;
-  left: -3px;
-  animation: glow_one 1.5s ease-in-out infinite alternate;
-}
-.inside {
-  width: 15em;
-  height: 15em;
-  background: #DAA161;
-  margin-top: -8em;
-  margin-left: 8em;
-}
-#circle_phone, #circle_email, #circle_linkedin, #circle_github, #circle_twitter{
-  display: none;
-}
-.open {
-    padding: 3em;
-    margin-left:5em;
-    margin-top:-11em;
-}
-.hide{
-  display: none;
-}
-.fix{
-  margin-top:20em;
-}*/
 /*Footer*/
 #footer{
   height: 6em;

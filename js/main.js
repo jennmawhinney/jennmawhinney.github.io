@@ -78,36 +78,39 @@ $(document).scroll(function() {
 
 /////////////Details/////////////
 ////////////hover///////////
+// $('#circle').hover(function(){
+//   $('#answer').addClass('glow_one');
+// });
   $('#phone').hover(function(){
-    $('#circle').addClass('.glow_one');
+    $('#circle').addClass('glow_one');
     $('#modal').html('0403 472 657')
                 .css({
                   'font-size':'1.3em'
                 });
   });
   $('#email').hover(function(){
-    $('#circle').addClass('.glow_one');
+    $('#circle').addClass('glow_one');
     $('#modal').html('jenn.mawhinney@gmail.com')
                 .css({
                   'font-size':'1.3em'
                 });
   });
   $('#linkedin').hover(function(){
-    $('#circle').addClass('.glow_one');
+    $('#circle').addClass('glow_one');
     $('#modal').html('au.linkedin.com/in/jennmawhinney')
                 .css({
                   'font-size':'1.3em'
                 });
   });
   $('#git').hover(function(){
-    $('#circle').addClass('.glow_one');
+    $('#circle').addClass('glow_one');
     $('#modal').html('github.com/jennmawhinney')
                 .css({
                   'font-size':'1.3em'
                 });
   });
   $('#twitter').hover(function(){
-    $('#circle').addClass('.glow_one');
+    $('#circle').addClass('glow_one');
     $('#modal').html('twitter.com/jennjennginger')
                 .css({
                   'font-size':'1.3em'
