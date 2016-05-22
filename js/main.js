@@ -1,138 +1,138 @@
-$(document).ready(function(){
-  $('#name').on('mouseenter', function(){
+$(document).ready(function() {
+  $('#name').on('mouseenter', function() {
     $(this).html('Welcome!')
-              .addClass('glow_one')
-              .addClass('font')
-              .delay(1500)
-              .queue(function(n) {
-                $(this)
-                .removeClass("glow_one");
-                n();
+      .addClass('glow_one')
+      .addClass('font')
+      .delay(1500)
+      .queue(function(n) {
+        $(this)
+          .removeClass("glow_one");
+        n();
+      });
+    $('#title').hide();
   });
-  $('#title').hide();
-});
-  $('#name').on('mouseleave', function(){
+  $('#name').on('mouseleave', function() {
     $(this).removeClass('glow_one')
-              .removeClass('font')
-              .html('Jenn Mawhinney');
+      .removeClass('font')
+      .html('Jenn Mawhinney');
     $('#title').show();
   });
 
-$(document).scroll(function() {
-  console.log('hello from scroll');
-  var top = $(document).scrollTop();
-  if (top >= 300){
-  $('#about_me').fadeTo(2500, 1).addClass('glow_two');
-  $('.blurb').animate({
-  left: "101.5%",
-}, 1500).addClass('glow_two');
-  $('.show').fadeIn(2500);
-  $('.show').fadeTo(2500, 1);
-}
-});
+  $(document).scroll(function() {
+    console.log('hello from scroll');
+    var top = $(document).scrollTop();
+    if (top >= 300) {
+      $('#about_me').fadeTo(2500, 1).addClass('glow_two');
+      $('.blurb').animate({
+        left: "101.5%",
+      }, 1500).addClass('glow_two');
+      $('.show').fadeIn(2500);
+      $('.show').fadeTo(2500, 1);
+    }
+  });
 
-///////////////Projects/////////////////////
-  $('#one').on('mouseenter', function(){
+  ///////////////Projects/////////////////////
+  $('#one').on('mouseenter', function() {
     $('#cover_one_text').css({
-      'visibility':'visible'
+      'visibility': 'visible'
     });
   });
-  $('#one').on('mouseleave', function(){
+  $('#one').on('mouseleave', function() {
     $('#cover_one_text').css({
-      'visibility':'hidden'
+      'visibility': 'hidden'
     });
   });
 
-  $('#two').on('mouseenter', function(){
+  $('#two').on('mouseenter', function() {
     $('#cover_two_text').css({
-      'visibility':'visible'
+      'visibility': 'visible'
     });
   });
-  $('#two').on('mouseleave', function(){
+  $('#two').on('mouseleave', function() {
     $('#cover_two_text').css({
-      'visibility':'hidden'
+      'visibility': 'hidden'
     });
   });
 
-  $('#three').on('mouseenter', function(){
+  $('#three').on('mouseenter', function() {
     $('#cover_three_text').css({
-      'visibility':'visible'
+      'visibility': 'visible'
     });
   });
-  $('#three').on('mouseleave', function(){
+  $('#three').on('mouseleave', function() {
     $('#cover_three_text').css({
-      'visibility':'hidden'
+      'visibility': 'hidden'
     });
   });
 
-  $('#four').on('mouseenter', function(){
+  $('#four').on('mouseenter', function() {
     $('#cover_four_text').css({
-      'visibility':'visible'
+      'visibility': 'visible'
     });
   });
-  $('#four').on('mouseleave', function(){
+  $('#four').on('mouseleave', function() {
     $('#cover_four_text').css({
-      'visibility':'hidden'
+      'visibility': 'hidden'
     });
   });
 
-/////////////Details/////////////
-////////////hover///////////
+  /////////////Details/////////////
+  ////////////hover///////////
 
-  $('#phone').hover(function(){
+  $('#phone').hover(function() {
     $('#circle').addClass('glow_three');
     $('#modal').html('0403 472 657')
-                .css({
-                  'font-size':'1.3em'
-                });
+      .css({
+        'font-size': '1.3em'
+      });
   });
-  $('#email').hover(function(){
+  $('#email').hover(function() {
     $('#circle').addClass('glow_three');
     $('#modal').html('jenn.mawhinney@gmail.com')
-                .css({
-                  'font-size':'1.3em'
-                });
+      .css({
+        'font-size': '1.3em'
+      });
   });
-  $('#linkedin').hover(function(){
+  $('#linkedin').hover(function() {
     $('#circle').addClass('glow_three');
     $('#modal').html('au.linkedin.com/in/jennmawhinney')
-                .css({
-                  'font-size':'1.3em'
-                });
+      .css({
+        'font-size': '1.3em'
+      });
   });
-  $('#git').hover(function(){
+  $('#git').hover(function() {
     $('#circle').addClass('glow_three');
     $('#modal').html('github.com/jennmawhinney')
-                .css({
-                  'font-size':'1.3em'
-                });
+      .css({
+        'font-size': '1.3em'
+      });
   });
-  $('#twitter').hover(function(){
+  $('#twitter').hover(function() {
     $('#circle').addClass('glow_three');
     $('#modal').html('twitter.com/jennjennginger')
-                .css({
-                  'font-size':'1.3em'
-                });
+      .css({
+        'font-size': '1.3em'
+      });
   });
-//////////mouseleave////////
-$('#phone').on('mouseleave', function(){
-  $('#modal').html('');
-  $('#circle').removeClass('glow_three');
-});
-$('#email').on('mouseleave', function(){
-  $('#circle').removeClass('glow_three');
-  $('#modal').html('');
-});
-$('#linkedin').on('mouseleave', function(){
-  $('#circle').removeClass('glow_three');
-  $('#modal').html('');
-});
-$('#git').on('mouseleave', function(){
-  $('#circle').removeClass('glow_three');
-  $('#modal').html('');
-});
-$('#twitter').on('mouseleave', function(){
-  $('#circle').removeClass('glow_three');
-  $('#modal').html('');
-});
+  //////////mouseleave////////
+  $('#phone').on('mouseleave', function() {
+    $('#modal').html('');
+    $('#circle').removeClass('glow_three');
+  });
+  $('#email').on('mouseleave', function() {
+    $('#circle').removeClass('glow_three');
+    $('#modal').html('');
+  });
+  $('#linkedin').on('mouseleave', function() {
+    $('#circle').removeClass('glow_three');
+    $('#modal').html('');
+  });
+  $('#git').on('mouseleave', function() {
+    $('#circle').removeClass('glow_three');
+    $('#modal').html('');
+  });
+  $('#twitter').on('mouseleave', function() {
+    $('#circle').removeClass('glow_three');
+    $('#modal').html('');
+  });
 }); //closes doc.ready
