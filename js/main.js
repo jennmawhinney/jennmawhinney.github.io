@@ -79,66 +79,54 @@ $(document).scroll(function() {
 /////////////Details/////////////
 ////////////hover///////////
   $('#phone').hover(function(){
-    $('.outside').toggleClass( "open" )
-                 .html('0403 472 657')
-                 .addClass('.fix')
-                 .toggleClass("glow_one");
-    $('.inside').toggleClass('hide');
+    $('#circle').addClass('.glow_one');
+    $('#modal').html('0403 472 657')
+                .css({
+                  'font-size':'1.3em'
+                });
   });
   $('#email').hover(function(){
-    $('.outside').toggleClass( "open" )
-                 .addClass('.fix')
-                 .toggleClass("glow_one");
-    $('.inside').toggleClass('hide')
-                .html('jenn.mawhinney@gmail.com');
+    $('#circle').addClass('.glow_one');
+    $('#modal').html('jenn.mawhinney@gmail.com')
+                .css({
+                  'font-size':'1.3em'
+                });
   });
   $('#linkedin').hover(function(){
-    $('.outside').toggleClass( "open" )
-                 .html('0403 472 657')
-                 .addClass('.fix')
-                 .toggleClass("glow_one");
-    $('.inside').toggleClass('hide');
+    $('#circle').addClass('.glow_one');
+    $('#modal').html('au.linkedin.com/in/jennmawhinney')
+                .css({
+                  'font-size':'1.3em'
+                });
   });
   $('#git').hover(function(){
-    $('.outside').toggleClass( "open" )
-                 .html('jennmawhnney.github.com')
-                 .addClass('.fix')
-                 .toggleClass("glow_one");
-    $('.inside').toggleClass('hide');
+    $('#circle').addClass('.glow_one');
+    $('#modal').html('github.com/jennmawhinney')
+                .css({
+                  'font-size':'1.3em'
+                });
   });
   $('#twitter').hover(function(){
-    $('.outside').toggleClass( "open" )
-                 .html('@jennjennginger')
-                 .addClass('.fix')
-                 .toggleClass("glow_one");
-    $('.inside').toggleClass('hide');
+    $('#circle').addClass('.glow_one');
+    $('#modal').html('twitter.com/jennjennginger')
+                .css({
+                  'font-size':'1.3em'
+                });
   });
-// // ////////////////mouseleave////////////////
-$('.wrap').hover(function(){
-  $('.outside').toggleClass( "open" )
-               .addClass("glow_one");
+//////////mouseleave////////
+$('#phone').on('mouseleave', function(){
+  $('#modal').html('');
 });
-$('.wrap').hover(function(){
-  $('.inside').toggleClass('hide');
+$('#email').on('mouseleave', function(){
+  $('#modal').html('');
 });
-//   $('#phone').on('mouseleave', function(){
-//     $(this).html('Phone')
-//             .addClass('details');
-//   });
-//   $('#email').on('mouseleave',function(){
-//     $(this).html('Email')
-//             .addClass('details');
-//   });
-//   $('#portfolio').on('mouseleave',function(){
-//     $(this).html('Portfolio')
-//             .addClass('details');
-//   });
-//   $('#git').on('mouseleave',function(){
-//     $(this).html('Github')
-//             .addClass('details');
-//   });
-//   $('#twitter').on('mouseleave',function(){
-//     $(this).html('Twitter')
-//             .addClass('details');
-//   });
+$('#linkedin').on('mouseleave', function(){
+  $('#modal').html('');
+});
+$('#git').on('mouseleave', function(){
+  $('#modal').html('');
+});
+$('#twitter').on('mouseleave', function(){
+  $('#modal').html('');
+});
 }); //closes doc.ready

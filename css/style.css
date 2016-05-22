@@ -82,6 +82,17 @@ a{
   font-size: 2em;
   padding-top: 0;
 }
+.social{
+  /*margin-left: 2em;*/
+  display: inline-block;
+}
+#social_linkedin, #social_github, #social_twitter{
+  font-size: 0.5em;
+  margin-right: 1em;
+  color: #DAA161;
+  display: inline-block;
+}
+
 /*Welcome*/
 #welcome{
   display: none;
@@ -118,22 +129,25 @@ a{
   margin-top: 10%;
   padding-left: 5%;
   z-index: 0;
+  /*line-height: 200%;*/
 }
 .show{
-  text-align: left;
+  text-align: center;
   padding-top: 2.5%;
   width: 40%;
   margin: 0 auto;
   opacity: 0;
   color: #FFE9D5;
-  font-family: 'Sintony', sans-serif;;
+  font-family: 'Text Me One', sans-serif;
+  font-size: 1.2em;
+  line-height: 150%;
 }
 /* Skills */
 .skills_row{
   width: 80%;
   margin: 0 auto;
 }
-#html, #css, #github, #ruby{
+#html, #css, #github, #ruby, #rails, #posgresql, #js, #jquery{
   background-size: cover;
   display: inline-block;
   width: 4em;
@@ -152,11 +166,26 @@ a{
 #github{
   background-image: url('../images/github.svg');
 }
+#rails{
+  background-image: url('../images/rails.svg');
+}
+#postgresql{
+  background-image: url('../images/postgresql.svg');
+}
+#js{
+  background-image: url('../images/js.svg');
+}
+#jquery{
+  background-image: url('../images/jquery.svg');
+}
 #skills{
   width: 100%;
   height: 40%;
   background-color: black;
   margin-top: 5%;
+}
+#skills h2{
+  font-size: 1.5em;
 }
 .separator{
   width: 80%;
@@ -280,11 +309,27 @@ a{
   color: black;
 }
 #answer{
-  width: 80%;
-  margin: 20% auto;
+  width: 42.5%;
+  margin: 15% auto;
   display: inline-block;
 }
-.wrap{
+
+/*circle*/
+#circle{
+  width: 20em;
+  height: 20em;
+  /*background-color: #DAA161;*/
+  border-radius: 50%;
+  border: 3px solid #DAA161;
+  position: relative;
+}
+#modal{
+  width: 15em;
+  height: 2em;
+  margin: 47% auto;
+  /*border: 1px solid white;*/
+}
+/*.wrap{
   position:relative;
   top:50px;
   left:50px;
@@ -306,8 +351,8 @@ a{
   border: 3px solid #DAA161;
   top: -3px;
   left: -3px;
+  animation: glow_one 1.5s ease-in-out infinite alternate;
 }
-
 .inside {
   width: 15em;
   height: 15em;
@@ -315,7 +360,9 @@ a{
   margin-top: -8em;
   margin-left: 8em;
 }
-
+#circle_phone, #circle_email, #circle_linkedin, #circle_github, #circle_twitter{
+  display: none;
+}
 .open {
     padding: 3em;
     margin-left:5em;
@@ -326,7 +373,7 @@ a{
 }
 .fix{
   margin-top:20em;
-}
+}*/
 /*Footer*/
 #footer{
   height: 6em;
