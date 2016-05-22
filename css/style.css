@@ -23,7 +23,10 @@ h1 {
   animation: glow_one 1.5s ease-in-out infinite alternate;
 }
 .glow_two{
-  animation: glow_two 3.5s ease-in-out;
+  animation: glow_two 3.5s ease-in-out alternate;
+}
+.glow_three{
+  animation: glow_three 1.5s ease-in-out infinite alternate;
 }
 h2{
   padding-top: 2em;
@@ -324,7 +327,6 @@ a.details:hover{
 #circle{
   width: 20em;
   height: 20em;
-  /*background-color: #DAA161;*/
   border-radius: 50%;
   border: 3px solid #DAA161;
   position: relative;
@@ -364,5 +366,13 @@ a.details:hover{
   }
   to {
     text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 15px #fff, 0 0 20px #DAA161, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
+  }
+}
+@-webkit-keyframes glow_three {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #DAA161, 0 0 35px #DFB561, 0 0 40px #DFB561, 0 0 50px #DFB561, 0 0 75px #DFB561;
+  }
+  to {
+    box-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 10px #DAA161, 0 0 10px #DFB561, 0 0 15px #DFB561, 0 0 2px #DFB561, 0 0 30px #DFB561;
   }
 }
