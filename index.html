@@ -13,7 +13,10 @@
     <!-- Home Page -->
     <div id="home">
       <nav class='nav'>
-        <ul>
+        <li>
+          <a id="nav-toggle" class='hidden inactive' href="#"><span></span></a>
+        </li>
+        <ul class='big-nav-toggle'>
           <li>
             <a id='home_hover' href="#home">Home</a>
           </li>
@@ -39,45 +42,32 @@
           </div>
         </ul>
       </nav>
-      <div class="separator"></div>
+      <div id="main">
+      </div>
+      <!-- <div class="separator"></div> -->
       <div class="container">
         <div class="name">
           <h1 id='name'>Jenn Mawhinney</h1>
           <h2 id='title'>Front End Web Developer</h2>
         </div>
-        <!-- from codepen -->
-        <a href="#about">
+      </div>
+      <!-- from codepen -->
+      <div class="arrow_container">
+        <a id="about_arrow" href="#about">
           <svg class="arrows">
             <path d="M0 20 L20 42 L40 20"></path>
             <path d="M0 40 L20 62 L40 40"></path>
           </svg>
         </a>
-        <!-- thank you!  -->
       </div>
+      <!-- thank you!  -->
     </div>
     <!-- About Page -->
     <div id="about">
-      <!-- The moving hello -->
-      <div class="blurb">
-        <p id='blurb'>h
-          <span class='dot'>.</span>
-          <span>l</span>
-          <span class='dot'>.</span>
-          <span>o</span>
-        </p>
+      <!-- The static hello -->
+      <div id="hello" class="glow_one">
+        <p>Hello!</p>
       </div>
-      <div id="about_me">
-        <p>
-          <span>
-            e
-          </span>
-          <span class='dot'>.</span>
-          <span>l</span>
-          <span class='dot'>.</span>
-          <span>!</span>
-        </p>
-      </div>
-      <!-- end moving hello -->
       <div class="show">
         <p>Hi! My name is Jenn and I'm a junior front-end web developer fresh from studying at General Assembly. I have 15 years of customer services and management experience and am interested in merging my past experience and excellent people skills with
           my love of design and my new found passion for web development.</p>
@@ -152,27 +142,35 @@
     <div id="contact">
       <div class="container">
         <div id="details_top"></div>
+        <!-- <div id="details-container" class='hidden'>
+          <p id="inner-container" class='hidden'></p>
+        </div> -->
+        <!-- <div id="small-container" class="hidden">
+          <p id="small-inner-container" class="hidden"></p>
+        </div> -->
         <div class="mini-container">
           <div id="phone">
             <h3 class='details'>Phone</h3>
           </div>
           <div id="email">
-            <a href="mailto:jenn.mawhinney@gmail.com?Subject=Hello!" class='details'>Email</a>
+            <h3><a href="#" class='details'>Email</a></h3>
           </div>
           <div id="linkedin">
-            <a href="https://au.linkedin.com/in/jennmawhinney" class='details'>Linkedin</a>
+            <h3><a href="https://au.linkedin.com/in/jennmawhinney" class='details'>Linkedin</a></h3>
           </div>
           <div id="git">
-            <a href="https://github.com/jennmawhinney" class='details'>Github</a>
+            <h3><a href="https://github.com/jennmawhinney" class='details'>Github</a></h3>
           </div>
           <div id="twitter">
-            <a href="https://twitter.com/jennjennginger" class='details'>Twitter</a>
+            <h3><a href="https://twitter.com/jennjennginger" class='details'>Twitter</a></h3>
           </div>
         </div>
         <div id="answer">
-          <div id="circle">
-            <div id="modal"></div>
-          </div>
+          <h3 id="phone_answer" class='answer'>0403 472 657</h3>
+          <h3 id="email_answer" class='answer'>jenn.mawhinney@gmail.com</h3>
+          <h3 id="linkedin_answer" class='answer'>au.linkedin.com/in/jennmawhinney</h3>
+          <h3 id="github_answer" class='answer'>github.com/jennmawhinney</h3>
+          <h3 id="twitter_answer" class='answer'>@jennjennginger</h3>
         </div>
       </div>
     </div>
